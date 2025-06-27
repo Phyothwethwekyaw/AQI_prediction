@@ -21,9 +21,10 @@ To build a machine learning model that can **predict AQI values** based on input
   - Converted date/time formats
     
 - **Models Used**:
-  - Linear Regression
+  - Random Forest
   - XGBoost Regressor
-  - 
+  - Gradient Boost
+    
 - **Evaluation Metrics**:
   - Mean Squared Error (MSE)
   - R² Score
@@ -35,7 +36,7 @@ To build a machine learning model that can **predict AQI values** based on input
 AQI_prediction/
 │
 ├── aqi_model.ipynb # Main Jupyter Notebook with training and prediction
-├── dataset.csv # (Optional) Dataset file if available
+├── AQI_dataset.csv
 ├── requirements.txt # Dependencies (pandas, sklearn, etc.)
 └── README.md # Project overview
 
