@@ -20,14 +20,17 @@ To build a machine learning model that can **predict AQI values** based on input
   - Normalized features
   - Converted date/time formats
     
-- **Models Used**:
+- **Tools Used**: Python (Jupyter Notebook), RapidMiner
+  
+- **Algorithms**:
+  - Gradient Boosting
   - Random Forest
-  - XGBoost Regressor
-  - Gradient Boost
+  - XGBoost
     
 - **Evaluation Metrics**:
-  - Mean Squared Error (MSE)
   - R² Score
+  - Mean Absolute Error (MAE)
+  - Root Mean Squared Error (RMSE)
 
 ---
 
@@ -35,10 +38,18 @@ To build a machine learning model that can **predict AQI values** based on input
 
 AQI_prediction/
 │
-├── aqi_model.ipynb # Main Jupyter Notebook with training and prediction
-├── AQI_dataset.csv
-├── requirements.txt # Dependencies (pandas, sklearn, etc.)
-└── README.md # Project overview
+├── Data Mining/
+│ ├── AQI_process.rmp # RapidMiner process file
+│ ├── Gradientboost.ipynb # Gradient Boosting model implementation
+│ ├── RandomForest.ipynb # Random Forest model implementation
+│ ├── XGBoost.ipynb # XGBoost model implementation
+│ └── process.jpg # Diagram or flowchart of the process
+│
+├── AQI_Dataset.zip # Dataset used in the project (zipped)
+├── Air Quality Index (AQI) Prediction.pptx # Presentation slides
+├── Empirical Result Summary.pdf # PDF summarizing evaluation results
+├── Final Draft Paper.docx # Full academic write-up
+├── README.md # Project overview and documentation
 
 ## 🚀 How to Run
 
@@ -46,5 +57,5 @@ AQI_prediction/
    ```bash git clone
    https://github.com/Phyothwethwekyaw/AQI_prediction.git
    cd AQI_prediction
-   
+
 
